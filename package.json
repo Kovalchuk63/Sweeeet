@@ -1,11 +1,11 @@
 {
-  "name": "sweeeet",
+  "name": "Sweeeet",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/sweeeet/",
+    "build": "vite build --base=/Sweeeet/",
     "preview": "vite preview"
   },
   "devDependencies": {
