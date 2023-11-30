@@ -1,0 +1,115 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./base/modern-normalize.css');
+@import url('./base/hidden.css');
+@import url('./base/reset.css');
+@import url('./base/scroll-fonts.css');
+
+@import url('./block-categories.css');
+@import url('./block-list.css');
+@import url('./block-popupar.css');
+@import url('./block-search.css');
+@import url('./pagin.css');
+
+@import url('./header.css');
+@import url('./hero.css');
+
+@import url('./modal-order.css');
+@import url('./modal-recipes.css');
+
+@import url('./favor-header.css');
+@import url('./favor-page.css');
+
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+/*------------*/
+:root {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  /* lt - light theme color */
+  --lt-background-color: rgba(248, 248, 248, 1);
+  --lt-text-color: rgba(5, 5, 5, 1);
+  --lt-border-color-opacity-twenty: rgba(5, 5, 5, 0.2);
+  --lt-text-color-opacity-thirty: rgba(5, 5, 5, 0.3);
+  --lt-text-color-opacity-fifty: rgba(5, 5, 5, 0.5);
+  --lt-text-color-opacity-sixty: rgba(248, 248, 248, 0.6);
+  --lt-text-color-opacity-eighty: rgba(5, 5, 5, 0.8);
+
+  /* dt - dark theme color */
+  --dt-background-color: rgba(22, 22, 22, 1);
+  --dt-text-color: rgba(255, 255, 255, 1);
+  --dt-border-color-opacity-twenty: rgba(255, 255, 255, 0.2);
+  --dt-text-color-opacity-thirty: rgba(255, 255, 255, 0.3);
+  --dt-text-color-opacity-fifty: rgba(255, 255, 255, 0.5);
+  --dt-text-color-opacity-sixty: rgba(255, 255, 255, 0.6);
+  --dt-text-color-opacity-eighty: rgba(255, 255, 255, 0.8);
+
+  --brand-color: rgba(155, 181, 55, 1);
+  --stars-color: rgba(238, 161, 12, 1);
+  --shadow: 7px 5px 15px 0px rgba(160, 158, 160, 0.6);
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* контейнер для 3ьох переломів в цсс */
+
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+  max-width: 375px;
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1104px;
+    padding: 0 12px;
+  }
+}
+
+.filter {
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .cont-div {
+    gap: 32px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cont-div {
+    gap: 64px;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .left-side {
+    padding-top: 26px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .rigth-side {
+    padding-top: 26px;
+  }
+}
